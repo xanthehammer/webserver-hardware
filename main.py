@@ -1,6 +1,6 @@
 import socket
-#from machine import Pin
-#led_pin = Pin(5, Pin.OUT)
+from machine import Pin
+led_pin = Pin(5, Pin.OUT)
 
 CONTENT = """\
 HTTP/1.0 200 OK
@@ -35,8 +35,8 @@ def main():
         req = stream.readline().decode("ascii")
         method, path, protocol = req.split(" ")
         print("Got", method, "request for")
-        #if path == "/toggle":
-            #led_pin.value(1-led_pin.value())
+        if path == "/toggle":
+            led_pin.value(1-led_pin.value())
         while True:
             h = stream.readline().decode("ascii").strip()
             if h == "":
