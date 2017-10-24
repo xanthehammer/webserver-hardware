@@ -11,10 +11,10 @@
    1. [pip](https://pip.pypa.io/en/stable/)
    2. picocom
      * Ubuntu: `sudo apt-get install picocom`
-     * Use [Homebrew](https://brew.sh/) on OS X: `brew install picocom`
+     * OS X: Use [Homebrew](https://brew.sh/) `brew install picocom`
    3. wget
      * Ubuntu: `sudo apt-get install wget`
-     * Use [Homebrew](https://brew.sh/) on OS X: `brew install wget`
+     * OS X: Use [Homebrew](https://brew.sh/) `brew install wget`
    4. esptool
      * `pip install esptool`
    5. ampy
